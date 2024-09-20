@@ -4,7 +4,6 @@ public class GameController : MonoBehaviour
 {
     void Start()
     {
-        // Obtener la nave seleccionada desde el GameManager
         ShipData selectedShip = GameManager.Instance.GetSelectedShip();
 
         // Instanciar la nave seleccionada en el juego
