@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5202372336018568854, guid: 71f1b79045f43bd478f25010d0dd7176, type: 3}
+      propertyPath: gyroEnabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7634061372067919066, guid: 71f1b79045f43bd478f25010d0dd7176, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
