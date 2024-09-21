@@ -6,6 +6,7 @@ public class BulletPool : MonoBehaviour
 {
     public GameObject bulletPrefab; // Prefab de la bala
     public int initialPoolSize = 10; // Tamaño inicial del pool
+    public int maxInactiveBullets = 10; // Máximo de balas inactivas permitidas
     private List<GameObject> bullets; // Lista de balas disponibles
 
     void Awake()
@@ -46,5 +47,37 @@ public class BulletPool : MonoBehaviour
     public void ReturnBullet(GameObject bullet)
     {
         bullet.SetActive(false); // Desactivar la bala y devolverla al pool
+        CheckInactiveBullets(); // Verificar si se debe eliminar balas inactivas
+    }
+
+    private void CheckInactiveBullets()
+    {
+        int inactiveCount = 0;
+
+        // Contar balas inactivas
+        foreach (var bullet in bullets)
+        {
+            if (!bullet.activeInHierarchy)
+            {
+                inactiveCount++;
+            }
+        }
+
+        // Si el número de balas inactivas excede el límite, destruir las extras
+        if (inactiveCount > maxInactiveBullets)
+        {
+            for (int i = bullets.Count - 1; i >= 0; i--)
+            {
+                if (!bullets[i].activeInHierarchy)
+                {
+                    Destroy(bullets[i]); // Destruir la bala inactiva
+                    bullets.RemoveAt(i); // Eliminarla de la lista
+                }
+
+                // Salir si ya se han eliminado suficientes balas
+                if (bullets.Count - inactiveCount <= maxInactiveBullets)
+                    break;
+            }
+        }
     }
 }
