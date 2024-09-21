@@ -98,8 +98,8 @@ GameObject:
   - component: {fileID: 5202372336018568854}
   - component: {fileID: -5891374037721526790}
   - component: {fileID: 1312415811296965550}
-  - component: {fileID: -1716680430171587365}
-  - component: {fileID: 4997825100625845907}
+  - component: {fileID: -2806879062996581673}
+  - component: {fileID: -5431407617878407180}
   m_Layer: 0
   m_Name: nave1
   m_TagString: Player
@@ -231,7 +231,7 @@ MonoBehaviour:
   bulletPool: {fileID: -5891374037721526790}
   movementSpeed: 2
   bulletSpeed: 5
---- !u!61 &-1716680430171587365
+--- !u!61 &-2806879062996581673
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -276,7 +276,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!50 &4997825100625845907
+--- !u!50 &-5431407617878407180
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -288,7 +288,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
