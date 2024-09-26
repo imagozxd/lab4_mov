@@ -30,4 +30,9 @@ public class SceneGlobalManager : MonoBehaviour
         }
         return false; 
     }
+
+    public void ReturnMenu()
+    {
+        SceneManager.LoadScene("Menu"); 
+    }
 }

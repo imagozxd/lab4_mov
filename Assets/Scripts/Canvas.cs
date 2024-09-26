@@ -12,6 +12,6 @@ public class Canvas : MonoBehaviour
         score += Time.deltaTime;
 
         // Actualizar el texto del score redondeando el valor
-        scoreText.text = "Score: " + Mathf.FloorToInt(score).ToString();
+        scoreText.text = "SCORE : " + Mathf.FloorToInt(score).ToString();
     }
 }
