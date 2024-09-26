@@ -23,6 +23,7 @@ public class Meteorite : MonoBehaviour
         else if (other.CompareTag("Player"))
         {
             meteoriteSpawner.ReturnToPool(gameObject);
+            other.gameObject.GetComponent<PlayerLifeManager>().TakeDamage(1);
         }
     }
 
