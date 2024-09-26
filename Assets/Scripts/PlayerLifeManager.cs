@@ -5,10 +5,11 @@ using UnityEngine.UI;
 using TMPro;
 public class PlayerLifeManager : MonoBehaviour
 {
-    public ShipData ship;       // Información del barco, como la vida máxima y el nombre
-    public int currentHealth;   // Vida actual del jugador
-    public TextMeshPro healthText;     // Referencia al componente Text que mostrará la vida
-
+    public ShipData ship;
+    public int currentHealth;
+    public TextMeshPro healthText; 
+    public GameObject deathScreen;
+    public Text Score;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +49,16 @@ public class PlayerLifeManager : MonoBehaviour
     private void Die()
     {
         Debug.Log(ship.shipName + " ha sido destruido!");
-        gameObject.SetActive(false); 
+        Canvas score = FindObjectOfType<Canvas>();
+        if(score != null)
+        {
+            score.SaveScore();
+        }
+        Time.timeScale = 0.0f;
+
+        deathScreen.SetActive(true);
+        int roundedScore = Mathf.FloorToInt(PlayerPrefs.GetFloat("score"));
+        Score.text = "Score: " + roundedScore.ToString();
     }
 
     // Método para actualizar el texto de la vida
