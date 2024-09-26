@@ -58,7 +58,7 @@ public class PlayerLifeManager : MonoBehaviour
 
         deathScreen.SetActive(true);
         int roundedScore = Mathf.FloorToInt(PlayerPrefs.GetFloat("score"));
-        Score.text = "Score: " + roundedScore.ToString();
+        Score.text = "SCORE: " + roundedScore.ToString();
     }
 
     // Método para actualizar el texto de la vida

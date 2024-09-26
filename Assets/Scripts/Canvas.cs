@@ -9,7 +9,7 @@ public class Canvas : MonoBehaviour
     void Update()
     {
         score += Time.deltaTime;
-        scoreText.text = "score : " + Mathf.FloorToInt(score).ToString();
+        scoreText.text = "SCORE : " + Mathf.FloorToInt(score).ToString();
     }
     public void SaveScore()
     {
