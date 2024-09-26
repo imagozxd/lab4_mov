@@ -16,5 +16,5 @@ MonoBehaviour:
   shipImage: {fileID: -1158418820, guid: 82e3d75b84cb41b468e8b267787a10fb, type: 3}
   bulletPrefab: {fileID: 0}
   shipPrefab: {fileID: 3535405197831160559, guid: ab8d36edc17cb60449474cca9e947366, type: 3}
-  speed: 3
-  health: 3
+  speed: 2
+  health: 6
