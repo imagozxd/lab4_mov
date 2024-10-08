@@ -116,6 +116,7 @@ struct EmptyInternalEnumerator_1_t4C00E89D5E985ED60E4D8B5DA0DEA467F5E1DDC5;
 struct EmptyInternalEnumerator_1_t391C09609680893BE74E26BB037F7D8B9F50AE5D;
 struct EmptyInternalEnumerator_1_tBF00BE9D3F6BAED60D0C4EBB2DEBA5AA6F207B08;
 struct EmptyInternalEnumerator_1_t36FB99AF13F3671B595B104603ACF85ED1C38527;
+struct EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76;
 struct EmptyInternalEnumerator_1_tAF59CCDDD84FD68AC0E3A07826BD3A8AC39127CE;
 struct EmptyInternalEnumerator_1_tC633E9356A8713EF20A966C2C6C1090A32C5F091;
 struct EmptyInternalEnumerator_1_t27A2BEE795BB409D0DBF27A003E745C18FBC6C7A;
@@ -419,6 +420,7 @@ struct HighlightStateU5BU5D_tCF5677B4773947CE4C64B938B12AC50DDA347435;
 struct HorizontalAlignmentOptionsU5BU5D_t4D185662282BFB910D8B9A8199E91578E9422658;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 struct Int32EnumU5BU5D_t87B7DB802810C38016332669039EF42C487A081F;
+struct Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D;
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 struct LigatureSubstitutionRecordU5BU5D_t04186B1B45C8D4F2AAB2299EE24668D39B4E9B50;
 struct ManipulatorActivationFilterU5BU5D_tE2A0BDE194B3B4600164AE8238C8CE2B20DBD4D7;
@@ -606,6 +608,9 @@ struct EmptyInternalEnumerator_1_tBF00BE9D3F6BAED60D0C4EBB2DEBA5AA6F207B08  : pu
 {
 };
 struct EmptyInternalEnumerator_1_t36FB99AF13F3671B595B104603ACF85ED1C38527  : public RuntimeObject
+{
+};
+struct EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76  : public RuntimeObject
 {
 };
 struct EmptyInternalEnumerator_1_tAF59CCDDD84FD68AC0E3A07826BD3A8AC39127CE  : public RuntimeObject
@@ -2199,6 +2204,48 @@ struct Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE_marshaled_com
 	uint32_t ___size;
 	Il2CppIUnknown* ___handle;
 	int32_t ___shortLived;
+};
+struct AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC 
+{
+	String_t* ___U3CIdU3Ek__BackingField;
+	String_t* ___U3CNameU3Ek__BackingField;
+	String_t* ___U3CDescriptionU3Ek__BackingField;
+	String_t* ___U3CGroupU3Ek__BackingField;
+	int32_t ___U3CImportanceU3Ek__BackingField;
+	bool ___U3CCanBypassDndU3Ek__BackingField;
+	bool ___U3CCanShowBadgeU3Ek__BackingField;
+	bool ___U3CEnableLightsU3Ek__BackingField;
+	bool ___U3CEnableVibrationU3Ek__BackingField;
+	Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D* ___U3CVibrationPatternU3Ek__BackingField;
+	int32_t ___U3CLockScreenVisibilityU3Ek__BackingField;
+};
+struct AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC_marshaled_pinvoke
+{
+	char* ___U3CIdU3Ek__BackingField;
+	char* ___U3CNameU3Ek__BackingField;
+	char* ___U3CDescriptionU3Ek__BackingField;
+	char* ___U3CGroupU3Ek__BackingField;
+	int32_t ___U3CImportanceU3Ek__BackingField;
+	int32_t ___U3CCanBypassDndU3Ek__BackingField;
+	int32_t ___U3CCanShowBadgeU3Ek__BackingField;
+	int32_t ___U3CEnableLightsU3Ek__BackingField;
+	int32_t ___U3CEnableVibrationU3Ek__BackingField;
+	Il2CppSafeArray* ___U3CVibrationPatternU3Ek__BackingField;
+	int32_t ___U3CLockScreenVisibilityU3Ek__BackingField;
+};
+struct AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC_marshaled_com
+{
+	Il2CppChar* ___U3CIdU3Ek__BackingField;
+	Il2CppChar* ___U3CNameU3Ek__BackingField;
+	Il2CppChar* ___U3CDescriptionU3Ek__BackingField;
+	Il2CppChar* ___U3CGroupU3Ek__BackingField;
+	int32_t ___U3CImportanceU3Ek__BackingField;
+	int32_t ___U3CCanBypassDndU3Ek__BackingField;
+	int32_t ___U3CCanShowBadgeU3Ek__BackingField;
+	int32_t ___U3CEnableLightsU3Ek__BackingField;
+	int32_t ___U3CEnableVibrationU3Ek__BackingField;
+	Il2CppSafeArray* ___U3CVibrationPatternU3Ek__BackingField;
+	int32_t ___U3CLockScreenVisibilityU3Ek__BackingField;
 };
 struct Angle_t0229F612898D65B3CC646C40A32D93D8A33C1DFC 
 {
@@ -11632,6 +11679,10 @@ struct EmptyInternalEnumerator_1_t36FB99AF13F3671B595B104603ACF85ED1C38527_Stati
 {
 	EmptyInternalEnumerator_1_t36FB99AF13F3671B595B104603ACF85ED1C38527* ___Value;
 };
+struct EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76_StaticFields
+{
+	EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76* ___Value;
+};
 struct EmptyInternalEnumerator_1_tAF59CCDDD84FD68AC0E3A07826BD3A8AC39127CE_StaticFields
 {
 	EmptyInternalEnumerator_1_tAF59CCDDD84FD68AC0E3A07826BD3A8AC39127CE* ___Value;
@@ -13748,6 +13799,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_tBC19AE73793D615D180F320AB46A541
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyInternalEnumerator_1__ctor_mCDBE331126E4434156F349D8A0498F935429AA8F_gshared (EmptyInternalEnumerator_1_tBF00BE9D3F6BAED60D0C4EBB2DEBA5AA6F207B08* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_tC3717D4552EE1E5FC27BFBA3F5155741BC04557A EmptyInternalEnumerator_1_get_Current_m14D1E7F73F2D568E6A7D5077C56519B9DAAD674E_gshared (EmptyInternalEnumerator_1_t36FB99AF13F3671B595B104603ACF85ED1C38527* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyInternalEnumerator_1__ctor_m977D2069E667D0B6A3DF8B8E0DD80C16633E3EEC_gshared (EmptyInternalEnumerator_1_t36FB99AF13F3671B595B104603ACF85ED1C38527* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC EmptyInternalEnumerator_1_get_Current_m66584360800F7C370B9E57851858EFE3D91753ED_gshared (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyInternalEnumerator_1__ctor_m087432CB03C0F96971240D4C2631B57AB7652D12_gshared (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Background_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8 EmptyInternalEnumerator_1_get_Current_m684E8B3ECDEFD8754D5028166DB23BD9FF747AD0_gshared (EmptyInternalEnumerator_1_tAF59CCDDD84FD68AC0E3A07826BD3A8AC39127CE* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyInternalEnumerator_1__ctor_m9BE00006BFAAB65FB54CD0FE89032149FA418FF3_gshared (EmptyInternalEnumerator_1_tAF59CCDDD84FD68AC0E3A07826BD3A8AC39127CE* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 EmptyInternalEnumerator_1_get_Current_m9B35B3998AA75674A3E868A79B3AFF62A9E0E652_gshared (EmptyInternalEnumerator_1_tC633E9356A8713EF20A966C2C6C1090A32C5F091* __this, const RuntimeMethod* method) ;
@@ -14768,6 +14821,14 @@ inline ValueTuple_2_tC3717D4552EE1E5FC27BFBA3F5155741BC04557A EmptyInternalEnume
 inline void EmptyInternalEnumerator_1__ctor_m977D2069E667D0B6A3DF8B8E0DD80C16633E3EEC (EmptyInternalEnumerator_1_t36FB99AF13F3671B595B104603ACF85ED1C38527* __this, const RuntimeMethod* method)
 {
 	((  void (*) (EmptyInternalEnumerator_1_t36FB99AF13F3671B595B104603ACF85ED1C38527*, const RuntimeMethod*))EmptyInternalEnumerator_1__ctor_m977D2069E667D0B6A3DF8B8E0DD80C16633E3EEC_gshared)(__this, method);
+}
+inline AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC EmptyInternalEnumerator_1_get_Current_m66584360800F7C370B9E57851858EFE3D91753ED (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76* __this, const RuntimeMethod* method)
+{
+	return ((  AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC (*) (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76*, const RuntimeMethod*))EmptyInternalEnumerator_1_get_Current_m66584360800F7C370B9E57851858EFE3D91753ED_gshared)(__this, method);
+}
+inline void EmptyInternalEnumerator_1__ctor_m087432CB03C0F96971240D4C2631B57AB7652D12 (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76* __this, const RuntimeMethod* method)
+{
+	((  void (*) (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76*, const RuntimeMethod*))EmptyInternalEnumerator_1__ctor_m087432CB03C0F96971240D4C2631B57AB7652D12_gshared)(__this, method);
 }
 inline Background_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8 EmptyInternalEnumerator_1_get_Current_m684E8B3ECDEFD8754D5028166DB23BD9FF747AD0 (EmptyInternalEnumerator_1_tAF59CCDDD84FD68AC0E3A07826BD3A8AC39127CE* __this, const RuntimeMethod* method)
 {
@@ -19134,6 +19195,67 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyInternalEnumerator_1__cctor_mE779E7
 		EmptyInternalEnumerator_1__ctor_m977D2069E667D0B6A3DF8B8E0DD80C16633E3EEC(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 3));
 		((EmptyInternalEnumerator_1_t36FB99AF13F3671B595B104603ACF85ED1C38527_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 4)))->___Value = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((EmptyInternalEnumerator_1_t36FB99AF13F3671B595B104603ACF85ED1C38527_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 4)))->___Value), (void*)L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyInternalEnumerator_1_Dispose_mEA20BD58CA164EE1E685A171B5489C611B5CDB0D_gshared (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool EmptyInternalEnumerator_1_MoveNext_m27B6D5C8240AB50A66E4B5C352388F094F06CBFD_gshared (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76* __this, const RuntimeMethod* method) 
+{
+	{
+		return (bool)0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC EmptyInternalEnumerator_1_get_Current_m66584360800F7C370B9E57851858EFE3D91753ED_gshared (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76* __this, const RuntimeMethod* method) 
+{
+	{
+		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_0 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
+		InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_0, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral7E7A07FECA0FF43839D67A9F7828EE56182CC9F6)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* EmptyInternalEnumerator_1_System_Collections_IEnumerator_get_Current_mA9F66A7865A6043C0933085BA2EF05695093615B_gshared (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76* __this, const RuntimeMethod* method) 
+{
+	{
+		AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC L_0;
+		L_0 = EmptyInternalEnumerator_1_get_Current_m66584360800F7C370B9E57851858EFE3D91753ED(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
+		AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC L_1 = L_0;
+		RuntimeObject* L_2 = Box(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 0), &L_1);
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyInternalEnumerator_1_System_Collections_IEnumerator_Reset_m575AE92937662E531E5754737583E52944EBC690_gshared (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyInternalEnumerator_1__ctor_m087432CB03C0F96971240D4C2631B57AB7652D12_gshared (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyInternalEnumerator_1__cctor_m67EF147911C7967E946FDB7C5E1242548E453559_gshared (const RuntimeMethod* method) 
+{
+	{
+		EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76* L_0 = (EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2));
+		EmptyInternalEnumerator_1__ctor_m087432CB03C0F96971240D4C2631B57AB7652D12(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 3));
+		((EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 4)))->___Value = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((EmptyInternalEnumerator_1_tDF5564FEF60957856375BF6E7B25C93DC7FEAF76_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 4)))->___Value), (void*)L_0);
 		return;
 	}
 }

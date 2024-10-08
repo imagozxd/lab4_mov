@@ -434,6 +434,7 @@ struct Func_1_t511AC01F88D5F3FAF9903156A74C5F40DF0D6A0E;
 struct Func_1_tBB8824FA8746333BFFF3AB3CE4A41B58450AF431;
 struct Func_2_tF42287527472FA89789873F068A87C60A00EC7D3;
 struct Func_2_tD7D2844A071B5C6280BB6380EFE3896CC538B77E;
+struct Func_2_tDF24EEAA8E333F9F52D9BFD8FFE14D866C8F3662;
 struct Func_2_t66AC14B29DD8B1DDD05693A14E55CF7707C762DB;
 struct Func_2_t6D961B754F6F517E8D6D744484D805ED47ADFCBA;
 struct Func_2_t51BF04753FE2F710F0B2FDCC296519FDBC882E13;
@@ -583,6 +584,7 @@ struct ColorBlockU5BU5D_t15403DAEAB234FE5927F08FC9968B78E2B1D14B6;
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 struct DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+struct Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D;
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
@@ -1012,6 +1014,48 @@ struct ValueTuple_3_t90CF2FEF2703459E904C84694EEECB64D3F220C1
 	int32_t ___Item1;
 	int32_t ___Item2;
 	RuntimeObject* ___Item3;
+};
+struct AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC 
+{
+	String_t* ___U3CIdU3Ek__BackingField;
+	String_t* ___U3CNameU3Ek__BackingField;
+	String_t* ___U3CDescriptionU3Ek__BackingField;
+	String_t* ___U3CGroupU3Ek__BackingField;
+	int32_t ___U3CImportanceU3Ek__BackingField;
+	bool ___U3CCanBypassDndU3Ek__BackingField;
+	bool ___U3CCanShowBadgeU3Ek__BackingField;
+	bool ___U3CEnableLightsU3Ek__BackingField;
+	bool ___U3CEnableVibrationU3Ek__BackingField;
+	Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D* ___U3CVibrationPatternU3Ek__BackingField;
+	int32_t ___U3CLockScreenVisibilityU3Ek__BackingField;
+};
+struct AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC_marshaled_pinvoke
+{
+	char* ___U3CIdU3Ek__BackingField;
+	char* ___U3CNameU3Ek__BackingField;
+	char* ___U3CDescriptionU3Ek__BackingField;
+	char* ___U3CGroupU3Ek__BackingField;
+	int32_t ___U3CImportanceU3Ek__BackingField;
+	int32_t ___U3CCanBypassDndU3Ek__BackingField;
+	int32_t ___U3CCanShowBadgeU3Ek__BackingField;
+	int32_t ___U3CEnableLightsU3Ek__BackingField;
+	int32_t ___U3CEnableVibrationU3Ek__BackingField;
+	Il2CppSafeArray* ___U3CVibrationPatternU3Ek__BackingField;
+	int32_t ___U3CLockScreenVisibilityU3Ek__BackingField;
+};
+struct AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC_marshaled_com
+{
+	Il2CppChar* ___U3CIdU3Ek__BackingField;
+	Il2CppChar* ___U3CNameU3Ek__BackingField;
+	Il2CppChar* ___U3CDescriptionU3Ek__BackingField;
+	Il2CppChar* ___U3CGroupU3Ek__BackingField;
+	int32_t ___U3CImportanceU3Ek__BackingField;
+	int32_t ___U3CCanBypassDndU3Ek__BackingField;
+	int32_t ___U3CCanShowBadgeU3Ek__BackingField;
+	int32_t ___U3CEnableLightsU3Ek__BackingField;
+	int32_t ___U3CEnableVibrationU3Ek__BackingField;
+	Il2CppSafeArray* ___U3CVibrationPatternU3Ek__BackingField;
+	int32_t ___U3CLockScreenVisibilityU3Ek__BackingField;
 };
 struct Angle_t0229F612898D65B3CC646C40A32D93D8A33C1DFC 
 {
@@ -6606,6 +6650,9 @@ struct Func_2_tF42287527472FA89789873F068A87C60A00EC7D3  : public MulticastDeleg
 {
 };
 struct Func_2_tD7D2844A071B5C6280BB6380EFE3896CC538B77E  : public MulticastDelegate_t
+{
+};
+struct Func_2_tDF24EEAA8E333F9F52D9BFD8FFE14D866C8F3662  : public MulticastDelegate_t
 {
 };
 struct Func_2_t66AC14B29DD8B1DDD05693A14E55CF7707C762DB  : public MulticastDelegate_t
@@ -19680,6 +19727,70 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_mCAC8D0CDDF4062304B6A4340FA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Func_2_Invoke_m2F064BFB9502B2762574DC05F9D41A46C1FB90C8_gshared (Func_2_tD7D2844A071B5C6280BB6380EFE3896CC538B77E* __this, ValueTuple_3_t90CF2FEF2703459E904C84694EEECB64D3F220C1 ___0_arg, const RuntimeMethod* method) 
 {
 	typedef RuntimeObject* (*FunctionPointerType) (RuntimeObject*, ValueTuple_3_t90CF2FEF2703459E904C84694EEECB64D3F220C1, const RuntimeMethod*);
+	return ((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_arg, reinterpret_cast<RuntimeMethod*>(__this->___method));
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+bool Func_2_Invoke_m07ADE8E640337A22CD8524B6D2AA497E5790E3F4_Multicast(Func_2_tDF24EEAA8E333F9F52D9BFD8FFE14D866C8F3662* __this, AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC ___0_arg, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates->GetAddressAtUnchecked(0));
+	bool retVal = false;
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Func_2_tDF24EEAA8E333F9F52D9BFD8FFE14D866C8F3662* currentDelegate = reinterpret_cast<Func_2_tDF24EEAA8E333F9F52D9BFD8FFE14D866C8F3662*>(delegatesToInvoke[i]);
+		typedef bool (*FunctionPointerType) (RuntimeObject*, AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC, const RuntimeMethod*);
+		retVal = ((FunctionPointerType)currentDelegate->___invoke_impl)((Il2CppObject*)currentDelegate->___method_code, ___0_arg, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method));
+	}
+	return retVal;
+}
+bool Func_2_Invoke_m07ADE8E640337A22CD8524B6D2AA497E5790E3F4_OpenInst(Func_2_tDF24EEAA8E333F9F52D9BFD8FFE14D866C8F3662* __this, AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC ___0_arg, const RuntimeMethod* method)
+{
+	typedef bool (*FunctionPointerType) (AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC, const RuntimeMethod*);
+	return ((FunctionPointerType)__this->___method_ptr)(___0_arg, method);
+}
+bool Func_2_Invoke_m07ADE8E640337A22CD8524B6D2AA497E5790E3F4_OpenStatic(Func_2_tDF24EEAA8E333F9F52D9BFD8FFE14D866C8F3662* __this, AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC ___0_arg, const RuntimeMethod* method)
+{
+	typedef bool (*FunctionPointerType) (AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC, const RuntimeMethod*);
+	return ((FunctionPointerType)__this->___method_ptr)(___0_arg, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m7038815B9AC3A2B1743445F4477478C54A790E39_gshared (Func_2_tDF24EEAA8E333F9F52D9BFD8FFE14D866C8F3662* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
+{
+	__this->___method_ptr = (intptr_t)il2cpp_codegen_get_method_pointer((RuntimeMethod*)___1_method);
+	__this->___method = ___1_method;
+	__this->___m_target = ___0_object;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target), (void*)___0_object);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___1_method);
+	__this->___method_code = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___1_method))
+	{
+		bool isOpen = parameterCount == 1;
+		if (isOpen)
+			__this->___invoke_impl = (intptr_t)&Func_2_Invoke_m07ADE8E640337A22CD8524B6D2AA497E5790E3F4_OpenStatic;
+		else
+			{
+				__this->___invoke_impl = __this->___method_ptr;
+				__this->___method_code = (intptr_t)__this->___m_target;
+			}
+	}
+	else
+	{
+		if (___0_object == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+		__this->___invoke_impl = __this->___method_ptr;
+		__this->___method_code = (intptr_t)__this->___m_target;
+	}
+	__this->___extra_arg = (intptr_t)&Func_2_Invoke_m07ADE8E640337A22CD8524B6D2AA497E5790E3F4_Multicast;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Func_2_Invoke_m07ADE8E640337A22CD8524B6D2AA497E5790E3F4_gshared (Func_2_tDF24EEAA8E333F9F52D9BFD8FFE14D866C8F3662* __this, AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC ___0_arg, const RuntimeMethod* method) 
+{
+	typedef bool (*FunctionPointerType) (RuntimeObject*, AndroidNotificationChannel_tC6BA531E60083BC47807903A8486C2C2BF51FEEC, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_arg, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
 #ifdef __clang__
