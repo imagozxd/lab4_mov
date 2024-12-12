@@ -1,15 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+
 public class PlayerLifeManager : MonoBehaviour
 {
-    public ShipData ship;       // Información del barco, como la vida máxima y el nombre
-    public int currentHealth;   // Vida actual del jugador
-    public TextMeshPro healthText;     // Referencia al componente Text que mostrará la vida
+    public ShipData ship;     
+    public int currentHealth;  
+    public TextMeshProUGUI healthText; 
 
-    // Start is called before the first frame update
     void Start()
     {
         currentHealth = ship.health;
@@ -18,8 +17,8 @@ public class PlayerLifeManager : MonoBehaviour
 
     public void TakeDamage(int damageAmount)
     {
-        currentHealth -= damageAmount;
-        UpdateHealthText();            
+        currentHealth = Mathf.Max(currentHealth - damageAmount, 0);
+        UpdateHealthText();
 
         if (currentHealth <= 0)
         {
@@ -27,36 +26,28 @@ public class PlayerLifeManager : MonoBehaviour
         }
     }
 
-    // Método para curar
     public void Heal(int healAmount)
     {
-        currentHealth += healAmount;
-
-        if (currentHealth > ship.health)
-        {
-            currentHealth = ship.health;
-        }
-
+        currentHealth = Mathf.Min(currentHealth + healAmount, ship.health);
         UpdateHealthText();
     }
 
-    public int GetCurrentHealth()
+    public int CurrentHealth
     {
-        return currentHealth;
+        get { return currentHealth; }
     }
 
     private void Die()
     {
-        Debug.Log(ship.shipName + " ha sido destruido!");
-        gameObject.SetActive(false); 
+        Debug.Log($"{ship.shipName} ha sido destruido!");
+        gameObject.SetActive(false);
     }
 
-    // Método para actualizar el texto de la vida
     private void UpdateHealthText()
     {
         if (healthText != null)
         {
-            healthText.text = currentHealth + " / " + ship.health;
+            healthText.text = $"{currentHealth} / {ship.health}";
         }
     }
 }

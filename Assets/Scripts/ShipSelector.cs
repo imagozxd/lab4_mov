@@ -15,10 +15,9 @@ public class ShipSelector : MonoBehaviour
 
     void Start()
     {
-        // Asignar eventos a los botones
-        buttonNave1.onClick.AddListener(() => SelectShip(0));  // Selecciona nave1
-        buttonNave2.onClick.AddListener(() => SelectShip(1));  // Selecciona nave2
-        buttonNave3.onClick.AddListener(() => SelectShip(2));  // Selecciona nave3
+        buttonNave1.onClick.AddListener(() => SelectShip(0));  // Selecciona nave 1
+        buttonNave2.onClick.AddListener(() => SelectShip(1));  // Selecciona nave 2
+        buttonNave3.onClick.AddListener(() => SelectShip(2));  // Selecciona nave 3
 
         // Selecciona la primera nave por defecto
         selectedShip = availableShips[0];
@@ -31,26 +30,26 @@ public class ShipSelector : MonoBehaviour
         if (index >= 0 && index < availableShips.Length)
         {
             selectedShip = availableShips[index];
-            Debug.Log("Nave seleccionada: " + selectedShip.shipName);
+            Debug.Log($"Nave seleccionada: {selectedShip.shipName}");
         }
         else
         {
             Debug.LogError("Índice de nave no válido.");
         }
     }
+
     public void StartGame()
     {
         Debug.Log("StartGame called");
-        if (selectedShip != null)
-        {
-            GameManager.Instance.SetSelectedShip(selectedShip);
-            SceneManager.LoadScene("GameScene");  // Carga la escena del juego
-            Debug.Log("nave creada?");
-        }
-        else
+        if (selectedShip == null)
         {
             Debug.LogError("No se ha seleccionado ninguna nave.");
+            return;
         }
-    }
 
+        GameManager.Instance.SetSelectedShip(selectedShip);
+        SceneManager.LoadScene("GameScene");  
+        Debug.Log("Nave creada: " + selectedShip.shipName);
+    }
 }
+

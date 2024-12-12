@@ -9,10 +9,10 @@ public class InputController : MonoBehaviour
     private float tapTimer = 0f;
     private float doubleTapMaxDelay = 0.3f;
     private int tapCount = 0;
-    private Vector2 lastTapPosition; // Posición del último tap
-    private float holdThreshold = 0.5f; // Duración mínima para considerar un hold
-    private bool isHolding = false; // Si el usuario está haciendo un hold
-    private float holdTimer = 0f; // Contador para el tiempo de hold
+    private Vector2 lastTapPosition; 
+    private float holdThreshold = 0.5f;
+    private bool isHolding = false; 
+    private float holdTimer = 0f; 
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class InputController : MonoBehaviour
     {
         if (SystemInfo.supportsGyroscope)
         {
-            gyroscope = Input.gyro;
+            gyroscope = Input.gy;
             gyroscope.enabled = true;
             return true;
         }
@@ -36,38 +36,24 @@ public class InputController : MonoBehaviour
 
     void Update()
     {
-        DetectTouchInput();
-        HandleTapDoubleTap();
-        HandleHold();
-    }
-
-    // Detectar el input de toques
-    private void DetectTouchInput()
-    {
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
+            DetectTouchInput(touch);
+            HandleHold(touch);
+        }
+        HandleTapDoubleTap();
+    }
 
-            if (touch.phase == TouchPhase.Began)
-            {
-                tapCount++;
-                lastTapPosition = touch.position; // Guardar la posición del toque
-                holdTimer = 0f; // Reiniciar el contador de hold
-                isHolding = false; // Reiniciar el estado de hold
-            }
-            else if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
-            {
-                holdTimer += Time.deltaTime;
-                if (holdTimer >= holdThreshold)
-                {
-                    isHolding = true;
-                    Debug.Log("Hold detectado.");
-                }
-            }
-            else if (touch.phase == TouchPhase.Ended)
-            {
-                isHolding = false;
-            }
+    // Detectar el input de toques
+    private void DetectTouchInput(Touch touch)
+    {
+        if (touch.phase == TouchPhase.Began)
+        {
+            tapCount++;
+            lastTapPosition = touch.position; // Guardar la posición del toque
+            holdTimer = 0f; // Reiniciar el contador de hold
+            isHolding = false; // Reiniciar el estado de hold
         }
     }
 
@@ -102,8 +88,22 @@ public class InputController : MonoBehaviour
         }
     }
 
-    private void HandleHold()
+    private void HandleHold(Touch touch)
     {
+        if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
+        {
+            holdTimer += Time.deltaTime;
+            if (holdTimer >= holdThreshold)
+            {
+                isHolding = true;
+                Debug.Log("Hold detectado.");
+            }
+        }
+        else if (touch.phase == TouchPhase.Ended)
+        {
+            isHolding = false;
+        }
+
         if (isHolding)
         {
             Debug.Log("Hold activo.");
@@ -124,8 +124,10 @@ public class InputController : MonoBehaviour
     {
         return isHolding;
     }
+
     public Vector3 GetGyroRotation()
     {
         return gyroscope.rotationRateUnbiased;
     }
 }
+
